@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <script src="https://kit.fontawesome.com/8bb5bc4b01.js" crossorigin="anonymous"></script>
+
+<body>
+
+    <video id="bgv" class="sunny" src="Video/default.mp4" autoplay loop muted></video>
+
+
+    <section class="searchbar">
+
+        <input type="search" name="searchbar" value="" id="search-bar" placeholder="Search a city">
+
+        <h2 class="error">Enter a valid city name</h2>
+    </section>
+
+    <main>
+
+        <div class="focus-in-expand">Search a place</div>
+
+        <div class="place-name">
+            <h2 class="city-name">Search a city</h2>
+            <h2 class="separator">, </h2>
+            <h2 class="country-name"></h2>
+        </div>
+
+
+        
+        <section class="scale-in-center">
+
+            <div class="loader"></div>
+
+            <div class="mainc">
+
+                <h3 class="weather-type"></h3>
+
+                <p class="current-temp">10</p>
+                <p class="current-temp2"></p>
+
+
+                <div class="temp-stats">
+                    <h3 class="max-temp"></h3>
+                    <h3 class="min-temp"></h3>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="random-fact">
+            <p>AQI - 50</p>
+        </div>
+
+        <div class="random">
+            <h2>Weather Fact</h2>
+            <p onload="fresh()"></p>
+        </div>
+
+        <section class="future-weather">
+
+            <div id="day1" class="day">
+
+                <div class="info">
+                    <h2 class="date1"></h2>
+                    <p>/</p>
+                    <h2 class="month1"></h2>
+                    <p>/</p>
+                    <h2 class="year1">2024</h2>
+                </div>
+
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-cloud-sun"></i>
+                <i class="fa-solid fa-cloud-rain"></i>
+
+                <div class="future-temp-stats">
+                    <h3 class="formax1">Max - 34</h3>
+                    <h3 class="formin1">Min - 26</h3>
+                </div>
+
+            </div>
+
+            <div id="day2" class="day">
+
+                <div class="info">
+                    <h2 class="date2"></h2>
+                    <p>/</p>
+                    <h2 class="month2"></h2>
+                    <p>/</p>
+                    <h2 class="year2">2024</h2>
+                </div>
+
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-cloud-sun"></i>
+                <i class="fa-solid fa-cloud-rain"></i>
+
+                <div class="future-temp-stats">
+                    <h3 class="formax2">H - 34</h3>
+                    <h3 class="formin2">L - 26</h3>
+                </div>
+
+            </div>
+
+            
+        </section>
+
+    </main>
+
+
+    <script src="SCRIPT/Script.js"></script>
+
+
+</body>
+
+</html>
